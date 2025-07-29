@@ -8,34 +8,48 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: #0d1117;
+      background: url('assets/wallpaper.jpg') no-repeat center center fixed;
+      background-size: cover;
       color: #e6edf3;
     }
+
     header {
-      background-color: #161b22;
-      padding: 20px;
+      background-color: rgba(22, 27, 34, 0.85);
+      padding: 10px 20px;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: flex-start;
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
+
     header img {
-      height: 60px;
+      height: 50px;
+      margin-right: 15px;
     }
+
     header h1 {
       margin: 0;
       font-size: 2rem;
       color: #ffa500;
     }
+
     .section {
       padding: 40px 20px;
       max-width: 900px;
       margin: auto;
+      background-color: rgba(13, 17, 23, 0.85);
+      border-radius: 10px;
+      margin-top: 30px;
     }
+
     .section h2 {
       color: #ffa500;
       border-bottom: 2px solid #ffa500;
       padding-bottom: 5px;
     }
+
     a.button {
       display: inline-block;
       margin-top: 10px;
@@ -46,18 +60,20 @@
       font-weight: bold;
       border-radius: 5px;
     }
+
     footer {
       text-align: center;
       padding: 20px;
-      background: #161b22;
+      background: rgba(22, 27, 34, 0.85);
       font-size: 0.9rem;
       color: #8b949e;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="assets/logo.png" alt="Duska OS Logo">
+    <img src="assets/logo.png" alt="Duska OS Logo" />
     <h1>Duska OS</h1>
   </header>
 
@@ -69,16 +85,16 @@
 
   <section class="section" id="downloads">
     <h2>📥 Downloads</h2>
-    <p>Grab the latest Duska OS ISO and verify its integrity:</p>
+    <p>Grab the latest Duska OS ISO and verify its integrity:(THE DISTRO ISN'T OUT YET!) </p>
     <a href="download.html" class="button">Download ISO</a>
-    <a href="SHA256SUMS.txt" class="button">SHA256SUMS</a>
+    <a href="SHA256SUMS.txt" class="button">SHA256SUMS (Service unavailable)</a>
   </section>
 
   <section class="section" id="lemon">
     <h2>🍋 Lemon Package Manager</h2>
     <p><strong>Lemon</strong> is Duska's custom package retriever. It allows you to install `.tar.xz` packages directly from the official repository.</p>
     <a href="lemon.html" class="button">Learn More</a>
-    <a href="packages/index.txt" class="button">Package Index</a>
+    <a href="packages/index.txt" class="button">Package Index (Service unavailable)</a>
   </section>
 
   <footer>
