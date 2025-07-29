@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Duska OS</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0d1117;
+      color: #e6edf3;
+    }
+    header {
+      background-color: #161b22;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header img {
+      height: 60px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #ffa500;
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .section h2 {
+      color: #ffa500;
+      border-bottom: 2px solid #ffa500;
+      padding-bottom: 5px;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #ffa500;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #161b22;
+      font-size: 0.9rem;
+      color: #8b949e;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="assets/logo.png" alt="Duska OS Logo">
+    <h1>Duska OS</h1>
+  </header>
+
+  <section class="section" id="intro">
+    <h2>🔧 Introduction</h2>
+    <p><strong>Duska OS</strong> is an experimental Linux distro based on Gentoo, built from scratch by a single indie developer. Its goal is to offer a customizable system for daily use, ideal for tinkerers and programmers who want more control and transparency.</p>
+    <p><strong>Warning:</strong> This distro is under development and may contain bugs or limited functionality. Use at your own risk.</p>
+  </section>
+
+  <section class="section" id="downloads">
+    <h2>📥 Downloads</h2>
+    <p>Grab the latest Duska OS ISO and verify its integrity:</p>
+    <a href="download.html" class="button">Download ISO</a>
+    <a href="SHA256SUMS.txt" class="button">SHA256SUMS</a>
+  </section>
+
+  <section class="section" id="lemon">
+    <h2>🍋 Lemon Package Manager</h2>
+    <p><strong>Lemon</strong> is Duska's custom package retriever. It allows you to install `.tar.xz` packages directly from the official repository.</p>
+    <a href="lemon.html" class="button">Learn More</a>
+    <a href="packages/index.txt" class="button">Package Index</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Duska OS. Created with passion by an indie developer.
+  </footer>
+</body>
+</html>
