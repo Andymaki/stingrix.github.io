@@ -1,6 +1,7 @@
 # DuskaOS
 
 ⚠️ WARNING: Duska OS is an experimental project created and maintained by a single 14-year-old indie developer. This is not a product of a company or large group (unlike Ubuntu, SUSE, Fedora, etc.). Expect bugs, incomplete features, and very limited packages in the repository. By installing, you acknowledge you may face kernel issues, graphics or timezone misconfigurations, and other errors. Use at your own risk and contribute feedback to help improve the project.
+
 🔧 Introduction
 
 Duska OS is an independent Linux distribution built from Gentoo sources but redesigned with its own philosophy and tools. It features a minimal base install and a custom package retriever called Lemon. The goal is to offer:
