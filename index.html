@@ -18,7 +18,6 @@
       padding: 10px 20px;
       display: flex;
       align-items: center;
-      justify-content: flex-start;
       position: sticky;
       top: 0;
       z-index: 100;
@@ -38,10 +37,9 @@
     .section {
       padding: 40px 20px;
       max-width: 900px;
-      margin: auto;
+      margin: 30px auto;
       background-color: rgba(13, 17, 23, 0.85);
       border-radius: 10px;
-      margin-top: 30px;
     }
 
     .section h2 {
@@ -50,9 +48,26 @@
       padding-bottom: 5px;
     }
 
+    .warning {
+      background-color: #ff0000cc;
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 25px;
+      text-transform: uppercase;
+      line-height: 1.4;
+    }
+
+    ul {
+      margin: 15px 0;
+      padding-left: 20px;
+    }
+
     a.button {
       display: inline-block;
-      margin-top: 10px;
+      margin: 10px 10px 0 0;
       padding: 10px 20px;
       background: #ffa500;
       color: #000;
@@ -78,23 +93,39 @@
   </header>
 
   <section class="section" id="intro">
+    <div class="warning">
+      ⚠️ WARNING: Duska OS is an experimental project created and maintained by a <strong>single 14-year-old indie developer</strong>.  
+      This is <strong>not</strong> a product of a company or large group (unlike Ubuntu, SUSE, Fedora, etc.).  
+      Expect bugs, incomplete features, and very <strong>limited</strong> packages in the repository.  
+      By installing, you acknowledge you may face kernel issues, graphics or timezone misconfigurations, and other errors.  
+      Use at your own risk and contribute feedback to help improve the project.
+    </div>
     <h2>🔧 Introduction</h2>
-    <p><strong>Duska OS</strong> is an experimental Linux distro based on Gentoo, built from scratch by a single indie developer. Its goal is to offer a customizable system for daily use, ideal for tinkerers and programmers who want more control and transparency.</p>
-    <p><strong>Warning:</strong> This distro is under development and may contain bugs or limited functionality. Use at your own risk.</p>
+    <p><strong>Duska OS</strong> is an independent Linux distribution built from Gentoo sources but redesigned with its own philosophy and tools. It features a minimal base install and a custom package retriever called <strong>Lemon</strong>. The goal is to offer:</p>
+    <ul>
+      <li>🛠 Full customization without overwhelming complexity</li>
+      <li>🧑‍💻 A learning-friendly environment for programmers and Linux enthusiasts</li>
+      <li>🔧 A lightweight core, with optional graphical environments available via Lemon</li>
+      <li>🎯 An evolving, community-driven platform — new features added based on user feedback</li>
+    </ul>
+    <p>This project is driven by passion and curiosity. It is entirely the work of one young developer, inspired by the DIY spirit of early Linux pioneers. While Duska OS aims to grow, for now it remains a personal, experimental journey into Linux development.</p>
   </section>
 
   <section class="section" id="downloads">
     <h2>📥 Downloads</h2>
-    <p>Grab the latest Duska OS ISO and verify its integrity:(THE DISTRO ISN'T OUT YET!) </p>
-    <a href="download.html" class="button">Download ISO</a>
+    <p>Download the latest ISO and verify with SHA256SUMS:</p>
+    <a href="download.html" class="button">Download ISO (THE DISTRO ISN'T OUT YET!)</a>
     <a href="SHA256SUMS.txt" class="button">SHA256SUMS (Service unavailable)</a>
   </section>
 
   <section class="section" id="lemon">
     <h2>🍋 Lemon Package Manager</h2>
-    <p><strong>Lemon</strong> is Duska's custom package retriever. It allows you to install `.tar.xz` packages directly from the official repository.</p>
+    <p><strong>Lemon</strong> is a simple package retriever for Duska OS that installs `.tar.xz` packages from the official repository.</p>
+    <p>Example:</p>
+    <code>sudo lemon firefox</code>
+    <p>Lemon will list matching packages and prompt you to choose one to install.</p>
     <a href="lemon.html" class="button">Learn More</a>
-    <a href="packages/index.txt" class="button">Package Index (Service unavailable)</a>
+    <a href="packages/index.txt" class="button">View Package Index (Service unavailable)</a>
   </section>
 
   <footer>
@@ -102,3 +133,5 @@
   </footer>
 </body>
 </html>
+
+
