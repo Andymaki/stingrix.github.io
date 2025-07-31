@@ -29,7 +29,7 @@
     }
     .container {
       padding: 40px 20px;
-      max-width: 1000px;
+      max-width: 800px;
       margin: auto;
       background-color: rgba(13, 17, 23, 0.85);
       border-radius: 10px;
@@ -37,29 +37,23 @@
     }
     h2 {
       color: #ffa500;
-      border-bottom: 2px solid #ffa500;
-      padding-bottom: 5px;
+      margin-bottom: 10px;
     }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
+    ul {
+      list-style-type: none;
+      padding-left: 0;
     }
-    th, td {
-      padding: 10px;
-      border: 1px solid #444;
-      text-align: left;
-    }
-    th {
-      background-color: #222;
-    }
-    tr:nth-child(even) {
-      background-color: rgba(0,0,0,0.3);
+    li {
+      padding: 6px 0;
+      border-bottom: 1px solid #333;
     }
     a {
       color: #4fa;
       text-decoration: none;
       font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
     }
     footer {
       text-align: center;
@@ -76,47 +70,21 @@
     <img src="assets/logo.png" alt="Duska OS Logo" />
     <h1>Package Index</h1>
   </header>
+
   <div class="container">
-    <h2>Available Lemon Packages</h2>
-    <p>Below is the list of packages currently available in the Duska OS repository:</p>
-    <table>
-      <thead>
-        <tr>
-          <th>Package</th>
-          <th>Version</th>
-          <th>Description</th>
-          <th>Download</th>
-          <th>SHA256</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>firefox</td>
-          <td>118.1</td>
-          <td>Web browser</td>
-          <td><a href="packages/firefox-118.1.tar.xz">Download</a></td>
-          <td>abcdef123456...7890</td>
-        </tr>
-        <tr>
-          <td>neofetch</td>
-          <td>7.1.0</td>
-          <td>System information tool</td>
-          <td><a href="packages/neofetch-7.1.0.tar.xz">Download</a></td>
-          <td>12345abcdef...67890</td>
-        </tr>
-        <tr>
-          <td>cava</td>
-          <td>1.8</td>
-          <td>Audio visualizer</td>
-          <td><a href="packages/cava-1.8.tar.xz">Download</a></td>
-          <td>fedcba098765...4321</td>
-        </tr>
-        <!-- Añade aquí más filas según vayas subiendo paquetes -->
-      </tbody>
-    </table>
+    <h2>Available Packages</h2>
+    <p>Click a package to download it directly. Lemon uses the same links internally.</p>
+    <ul>
+      <li><a href="packages/firefox-2.3.tar.xz" download>firefox-2.3.tar.xz</a></li>
+      <li><a href="packages/xfce-4.1.tar.xz" download>xfce-4.1.tar.xz</a></li>
+      <li><a href="packages/neofetch-7.1.0.tar.xz" download>neofetch-7.1.0.tar.xz</a></li>
+      <li><a href="packages/cava-1.8.tar.xz" download>cava-1.8.tar.xz</a></li>
+      <!-- Agrega más paquetes aquí -->
+    </ul>
   </div>
+
   <footer>
-    &copy; 2025 Duska OS. Created with passion by an indie developer.
+    &copy; 2025 Duska OS — Independent project by a passionate developer.
   </footer>
 </body>
 </html>
