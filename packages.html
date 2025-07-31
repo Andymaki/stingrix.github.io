@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Duska OS — Package Index</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('assets/fondo.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #e6edf3;
+    }
+    header {
+      background-color: rgba(22, 27, 34, 0.85);
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+    }
+    header img {
+      height: 50px;
+      margin-right: 15px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #ffa500;
+    }
+    .container {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: rgba(13, 17, 23, 0.85);
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+    h2 {
+      color: #ffa500;
+      border-bottom: 2px solid #ffa500;
+      padding-bottom: 5px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      padding: 10px;
+      border: 1px solid #444;
+      text-align: left;
+    }
+    th {
+      background-color: #222;
+    }
+    tr:nth-child(even) {
+      background-color: rgba(0,0,0,0.3);
+    }
+    a {
+      color: #4fa;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      background: rgba(22, 27, 34, 0.85);
+      color: #8b949e;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="assets/logo.png" alt="Duska OS Logo" />
+    <h1>Package Index</h1>
+  </header>
+  <div class="container">
+    <h2>Available Lemon Packages</h2>
+    <p>Below is the list of packages currently available in the Duska OS repository:</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Package</th>
+          <th>Version</th>
+          <th>Description</th>
+          <th>Download</th>
+          <th>SHA256</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>firefox</td>
+          <td>118.1</td>
+          <td>Web browser</td>
+          <td><a href="packages/firefox-118.1.tar.xz">Download</a></td>
+          <td>abcdef123456...7890</td>
+        </tr>
+        <tr>
+          <td>neofetch</td>
+          <td>7.1.0</td>
+          <td>System information tool</td>
+          <td><a href="packages/neofetch-7.1.0.tar.xz">Download</a></td>
+          <td>12345abcdef...67890</td>
+        </tr>
+        <tr>
+          <td>cava</td>
+          <td>1.8</td>
+          <td>Audio visualizer</td>
+          <td><a href="packages/cava-1.8.tar.xz">Download</a></td>
+          <td>fedcba098765...4321</td>
+        </tr>
+        <!-- Añade aquí más filas según vayas subiendo paquetes -->
+      </tbody>
+    </table>
+  </div>
+  <footer>
+    &copy; 2025 Duska OS. Created with passion by an indie developer.
+  </footer>
+</body>
+</html>
