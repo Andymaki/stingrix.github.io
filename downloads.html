@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StingriX Downloads</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    header {
+      background-color: #f5f5f5;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      border-bottom: 2px solid #ddd;
+    }
+
+    /* NAV LEFT OF LOGO+NAME: classic buttons before logo and name */
+    nav {
+      display: flex;
+      gap: 10px;
+      margin-right: 20px; /* space between nav and logo */
+    }
+
+    .nav-button {
+      padding: 6px 12px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #333;
+      border: 1px solid #333;
+      border-radius: 5px;
+      background: #fff;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    .nav-button:hover {
+      background-color: #e6e6e6;
+    }
+
+    header img {
+      height: 50px;
+      margin-right: 15px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #333;
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 30px auto;
+      background-color: #fafafa;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+    }
+
+    .section h2 {
+      color: #333;
+      border-bottom: 2px solid #333;
+      padding-bottom: 5px;
+    }
+
+    .note {
+      background: #fff8e1;
+      border: 1px solid #ffe082;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .arch-list {
+      margin: 10px 0 20px 20px;
+    }
+
+    .download-button {
+      display: inline-block;
+      margin: 10px 10px 0 0;
+      padding: 10px 20px;
+      background: #999;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: not-allowed; /* visually indicates disabled */
+      opacity: 0.7;
+    }
+
+    .checksum {
+      display: inline-block;
+      margin-left: 10px;
+      color: #666;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f5f5f5;
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 40px;
+      border-top: 2px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- NAV BUTTONS BEFORE LOGO + NAME -->
+    <nav>
+      <a href="index.html" class="nav-button">Home</a>
+      <a href="mascot.html" class="nav-button">Mascot</a>
+      <a href="developer.html" class="nav-button">Developer</a>
+      <a href="downloads.html" class="nav-button">Downloads</a>
+    </nav>
+
+    <img src="assets/logo.png" alt="StingriX Logo" />
+    <h1>StingriX Kernel</h1>
+  </header>
+
+  <section class="section" id="downloads">
+    <h2>📥 Downloads & Release Plan</h2>
+
+    <div class="note">
+      <strong>IMPORTANT:</strong> The ISO has not been released yet.  
+      StingriX Kernel is in a very early development stage. The first public release will be a minimal, experimental **beta** and is likely to be extremely basic. The current plan is:
+      <ul>
+        <li>If development goes quickly: target release **end of 2025**.</li>
+        <li>Otherwise: release **mid–late 2026**, depending on progress (kernel features, basic filesystem, init, shell, drivers, etc.).</li>
+      </ul>
+      Please consider this a testing/BETA release when it arrives.
+    </div>
+
+    <h3>Supported architectures (initial targets)</h3>
+    <p>For the first stages, it is recommended to focus on a small set of architectures to reduce complexity. Suggested initial targets:</p>
+    <ul class="arch-list">
+      <li><strong>x86_64</strong> — Primary target for desktops and most laptops.</li>
+      <li><strong>aarch64 (ARM64)</strong> — Modern ARM devices and many single-board computers.</li>
+      <li><strong>i686 (optional)</strong> — 32-bit x86 for very old hardware (consider later).</li>
+      <!-- If you prefer to start slimmer, you can remove i686 -->
+    </ul>
+
+    <h3>How downloads will work (planned)</h3>
+    <ul>
+      <li>Release artifacts will include an ISO image and a minimal root filesystem tarball.</li>
+      <li>Checksums (SHA256) will be provided alongside each release.</li>
+      <li>Initial releases will require manual installation and are intended for advanced users and testers.</li>
+    </ul>
+
+    <p style="margin-top:18px;"><strong>ISO Status:</strong> <em>Not yet available — Kernel in an extremely early stage.</em></p>
+    <p style="margin:6px 0 12px 0;">When available, the first ISO will likely be labeled something like <code>stingrix-0.1-beta-x86_64.iso</code> (name and version subject to change).</p>
+
+    <!-- Disabled-looking button — visual only, not functional -->
+    <div>
+      <div style="margin-bottom:8px; color:#333;">Download ISO (not yet released)</div>
+      <a class="download-button" href="#" aria-disabled="true" onclick="return false;">Download ISO (Coming Soon)</a>
+      <span class="checksum">SHA256SUMS (coming soon)</span>
+    </div>
+
+    <h3 style="margin-top:24px;">Feedback & Testers</h3>
+    <p>If you want to help test early releases when they arrive, keep an eye on the project and reach out via the social links on the Developer page. Early testers should be comfortable with manual installs and debugging kernel/driver issues.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 StingriX Kernel. Created with passion by an indie developer.
+  </footer>
+</body>
+</html>
