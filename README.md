@@ -1,5 +1,5 @@
 # StingriX kernel
-🔧 Introduction
+#🔧 Introduction
 StingriX is a minimal, independent kernel project designed to be simple, lightweight, and educational. Its purpose is not to compete with production-grade kernels but to provide:
 
 🛠 A minimal foundation with only the essentials
