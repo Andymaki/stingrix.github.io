@@ -3,20 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Duska OS</title>
+  <title>StingriX Kernel</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
+      color: #000000;
+    }
 
     header {
-      background-color: rgba(22, 27, 34, 0.85);
+      background-color: #f5f5f5;
       padding: 10px 20px;
       display: flex;
       align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 100;
+      border-bottom: 2px solid #ddd;
     }
 
     header img {
@@ -27,25 +28,32 @@
     header h1 {
       margin: 0;
       font-size: 2rem;
-      color: #ffa500;
+      color: #333;
+    }
+
+    .logo-large {
+      display: block;
+      margin: 40px auto 20px auto;
+      max-width: 250px;
     }
 
     .section {
       padding: 40px 20px;
       max-width: 900px;
       margin: 30px auto;
-      background-color: rgba(13, 17, 23, 0.85);
+      background-color: #fafafa;
+      border: 1px solid #ddd;
       border-radius: 10px;
     }
 
     .section h2 {
-      color: #ffa500;
-      border-bottom: 2px solid #ffa500;
+      color: #333;
+      border-bottom: 2px solid #333;
       padding-bottom: 5px;
     }
 
     .warning {
-      background-color: #ff0000cc;
+      background-color: #cc0000;
       color: white;
       padding: 20px;
       border-radius: 8px;
@@ -65,8 +73,8 @@
       display: inline-block;
       margin: 10px 10px 0 0;
       padding: 10px 20px;
-      background: #ffa500;
-      color: #000;
+      background: #333;
+      color: #fff;
       text-decoration: none;
       font-weight: bold;
       border-radius: 5px;
@@ -75,59 +83,50 @@
     footer {
       text-align: center;
       padding: 20px;
-      background: rgba(22, 27, 34, 0.85);
+      background: #f5f5f5;
       font-size: 0.9rem;
-      color: #8b949e;
+      color: #555;
       margin-top: 40px;
+      border-top: 2px solid #ddd;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="assets/logo.png" alt="Duska OS Logo" />
-    <h1>Duska OS</h1>
+    <img src="assets/logo.png" alt="StingriX Logo" />
+    <h1>StingriX Kernel</h1>
   </header>
+
+  <!-- Large centered logo at top -->
+  <img src="assets/logo.png" alt="StingriX Logo Large" class="logo-large"/>
 
   <section class="section" id="intro">
     <div class="warning">
-      ⚠️ WARNING: Duska OS is an experimental project created and maintained by a <strong>teenager indie developer</strong>.  
-      This is <strong>not</strong> a product of a company or large group (unlike Ubuntu, SUSE, Fedora, etc.).  
-      Expect bugs, incomplete features, and very <strong>limited</strong> packages in the repository.  
-      By installing, you acknowledge you may face kernel issues, graphics or timezone misconfigurations, and other errors.  
-      Use at your own risk and contribute feedback to help improve the project.
+      ⚠️ WARNING: StingriX is an experimental kernel created and maintained by a <strong>teenage indie developer</strong>.  
+      This is <strong>not</strong> a product of a company or large group.  
+      Expect bugs, incomplete features, and unstable behavior.  
+      By using StingriX, you acknowledge that it is highly experimental and may cause system issues.  
+      Use at your own risk and share feedback to help improve the project.
     </div>
     <h2>🔧 Introduction</h2>
-    <p><strong>Duska OS</strong> is an independent Linux distribution built from Gentoo sources but redesigned with its own philosophy and tools. It features a minimal base install and a custom package retriever called <strong>Lemon</strong>. The goal is to offer:</p>
+    <p><strong>StingriX</strong> is a minimal, independent kernel project designed to be simple, lightweight, and educational. Its purpose is not to compete with production-grade kernels but to provide:</p>
     <ul>
-      <li>🛠 Full customization without overwhelming complexity</li>
-      <li>🧑‍💻 A learning-friendly environment for programmers and Linux enthusiasts</li>
-      <li>🔧 A lightweight core, with optional graphical environments available via Lemon</li>
-      <li>🎯 An evolving, community-driven platform — new features added based on user feedback</li>
+      <li>🛠 A minimal foundation with only the essentials</li>
+      <li>🧑‍💻 An educational environment for those curious about kernel development</li>
+      <li>🔧 A lightweight base for experiments in operating system design</li>
+      <li>🎯 A personal project that may evolve with community input</li>
     </ul>
-    <p>This project is driven by passion and curiosity. It is entirely the work of one young developer, inspired by the DIY spirit of early Linux pioneers. While Duska OS aims to grow, for now it remains a personal, experimental journey into Linux development.</p>
+    <p>This project is entirely built by one young developer, motivated by curiosity and the desire to learn. StingriX is currently in its very early stages, more of a proof of concept than a complete operating system kernel.</p>
   </section>
 
   <section class="section" id="downloads">
     <h2>📥 Downloads</h2>
-    <p>Download the latest ISO and verify with SHA256SUMS:</p>
-    <a href="download.html" class="button">Download ISO (THE DISTRO ISN'T OUT YET!)</a>
-    <a href="SHA256SUMS.txt" class="button">SHA256SUMS (Service unavailable)</a>
-  </section>
-
-  <section class="section" id="lemon">
-    <h2>🍋 Lemon Package Manager</h2>
-    <p><strong>Lemon</strong> is a simple package retriever for Duska OS that installs `.tar.xz` packages from the official repository.</p>
-    <p>Example:</p>
-    <code>sudo lemon firefox</code>
-    <p>Lemon will list matching packages and prompt you to choose one to install.</p>
-    <a href="lemon.html" class="button">Learn More</a>
-    <a href="packages.html" class="button">View Package Index</a>
+    <p>The kernel is not yet available for release. When development reaches a usable stage, downloads and checksums will be published here.</p>
+    <a href="#" class="button">Coming Soon</a>
   </section>
 
   <footer>
-    &copy; 2025 Duska OS. Created with passion by an indie developer.
+    &copy; 2025 StingriX Kernel. Created with passion by an indie developer.
   </footer>
 </body>
 </html>
-
-
