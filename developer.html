@@ -1,138 +1,67 @@
+<!-- File: developer.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About the Developer</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #ffffff;
-      color: #000000;
-    }
-
-    header {
-      background-color: #f5f5f5;
-      padding: 10px 20px;
-      display: flex;
-      align-items: center;
-      border-bottom: 2px solid #ddd;
-    }
-
-
-    nav {
-      display: flex;
-      gap: 10px;
-      margin-right: 20px;
-    }
-
-    .nav-button {
-      padding: 6px 12px;
-      text-decoration: none;
-      font-weight: bold;
-      color: #333;
-      border: 1px solid #333;
-      border-radius: 5px;
-      background: #fff;
-      transition: background 0.15s, color 0.15s;
-    }
-
-    .nav-button:hover {
-      background-color: #e6e6e6;
-    }
-
-    header img {
-      height: 50px;
-      margin-right: 15px;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-      color: #333;
-    }
-
-    .section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: 30px auto;
-      background-color: #fafafa;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-    }
-
-    .section h2 {
-      color: #333;
-      border-bottom: 2px solid #333;
-      padding-bottom: 5px;
-    }
-
-    ul {
-      margin: 10px 0 20px 20px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #f5f5f5;
-      font-size: 0.9rem;
-      color: #555;
-      margin-top: 40px;
-      border-top: 2px solid #ddd;
-    }
-
-    .social-links a {
-      display: block;
-      margin: 5px 0;
-      color: #333;
-      text-decoration: none;
-    }
-
-    .social-links a:hover {
-      text-decoration: underline;
-    }
-  </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Developer — StingriX</title>
+<style>
+body{margin:0;font-family:Inter,Segoe UI,Arial;background:#fff;color:#111}
+header{display:flex;align-items:center;padding:12px 18px;border-bottom:1px solid #eee}
+header img.logo{height:44px}
+nav{margin-left:auto;display:flex;gap:8px}
+.content{max-width:900px;margin:28px auto;padding:20px}
+.profile{display:flex;gap:18px;align-items:flex-start}
+.avatar{width:140px;height:140px;background:#f3f4f6;border-radius:12px;display:flex;align-items:center;justify-content:center;color:#999}
+.links a{display:inline-block;margin-right:10px}
+footer{padding:18px;text-align:center;color:#888;border-top:1px solid #eee}
+</style>
 </head>
 <body>
-  <header>
+<header>
+<div style="display:flex;gap:12px;align-items:center">
+<img class="logo" src="assets/logo.png" alt="StingriX logo"/>
+<div style="font-weight:700;color:#ff3b30">StingriX</div>
+</div>
+<nav>
+<a class="button" href="index.html">Home</a>
+<a class="button" href="mascot.html">Mascot</a>
+<a class="button" href="developer.html">Developer</a>
+<a class="button" href="developmentprogress.html">Development Progress</a>
+<a class="button" href="downloads.html">Downloads</a>
+</nav>
+</header>
 
-    <nav>
-      <a href="index.html" class="nav-button">Home</a>
-      <a href="mascot.html" class="nav-button">Mascot</a>
-      <a href="developer.html" class="nav-button">Developer</a>
-      <a href="downloads.html" class="nav-button">Downloads</a>
-    </nav>
 
-    <img src="assets/logo.png" alt="StingriX Logo" />
-    <h1>StingriX Kernel</h1>
-  </header>
+<main class="content">
+<div class="profile">
+<div class="avatar">You</div>
+<div>
+<h1>About the developer</h1>
+<p>I am a teenager working alone on StingriX. My hobbies include programming, systems development and learning how operating systems and kernels function. I'm also writing a Linux manual to deepen my understanding of filesystems, inits, shells and languages like C, Python, CSS and JSON formats.</p>
 
-  <section class="section" id="developer">
-    <h2> About the Developer</h2>
-    <p>Hello! I am a teenage indie developer working on <strong>StingriX Kernel</strong>. My passion is programming, learning about systems, and experimenting with operating system internals. I am currently developing my own Linux manual to better understand:</p>
-    <ul>
-      <li>File systems</li>
-      <li>Kernels in general</li>
-      <li>Init systems</li>
-      <li>Shells</li>
-      <li>Crucial programming languages like C+, Python, CSS, JSON, and JSONC</li>
-    </ul>
-    <p>Besides coding, I enjoy relaxing, listening to music, and having a cup of coffee. I also like gaming — <em>yes, I know it might sound childish, but sometimes I play Roblox</em> :/ . And <em>yes, I also know some might call it a weird game or tell me to "go touch some grass", but I do play Fortnite too</em> .</p>
-    
-    <h3>🌐 Social & Feedback</h3>
-    <p>I don’t post much online, but if anyone wants to send feedback, DMs, or just learn more, you can follow or add me on:</p>
-    <div class="social-links">
-      <a href="https://www.reddit.com/user/Aggravating_Swan_650/" target="_blank">Reddit: Aggravating_Swan_650</a>
-      <a href="https://x.com/Andymaki0" target="_blank">X: @Andymaki0</a>
-      <span>Discord user: ".dotconfig"</span>
-    </div>
-    
-    <p>This is my journey into systems and kernel development, shared openly to inspire and connect with others who are curious and passionate about low-level programming.</p>
-  </section>
 
-  <footer>
-    &copy; 2025 StingriX Kernel. Created with passion by an indie developer.
-  </footer>
+<p>Fun facts:</p>
+<ul>
+<li>Yes, I sometimes play Roblox — even if some people call it childish.</li>
+<li>I also play Fortnite occasionally (I know some people will tease me about it).</li>
+<li>I like to relax, listen to music and have a coffee while I code.</li>
+</ul>
+
+
+<h2>Contact & social</h2>
+<p class="links">If you want to follow or reach out: <br>
+Reddit: <a href="https://www.reddit.com/user/Aggravating_Swan_650/">Aggravating_Swan_650</a><br>
+X: <a href="https://x.com/Andymaki0">@Andymaki0</a><br>
+Discord: .dotconfig
+</p>
+
+
+</div>
+</div>
+</main>
+
+
+<footer>© 2025 StingriX — created by a single developer</footer>
 </body>
 </html>
