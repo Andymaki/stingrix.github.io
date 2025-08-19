@@ -1,81 +1,82 @@
-<!-- File: developmentprogress.html -->
-<p><strong id="betaPct">0%</strong> — How close we are to releasing the first minimal public beta.</p>
-<div class="controls">
-<input id="betaInput" type="number" min="0" max="100" value="0" />
-<button id="betaSave">Save</button>
-<small class="muted">Last updated: <span id="betaTime">never</span></small>
-</div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Development Progress — StingriX</title>
+  <style>
+    :root{--accent:#ff3b30;--muted:#6b7280}
+    body{margin:0;font-family:Inter,Segoe UI,system-ui,Arial,Helvetica,sans-serif;background:#fff;color:#111}
+    header{display:flex;align-items:center;gap:12px;padding:10px 16px;border-bottom:1px solid #eee}
+    header img.logo{height:32px;width:32px;object-fit:contain}
+    .brand{display:flex;align-items:center;gap:10px}
+    .brand .name{font-weight:700;color:var(--accent)}
+    .brand .tag{font-size:.82rem;color:var(--muted)}
+    nav{margin-left:auto;display:flex;gap:8px}
+    a.button{background:var(--accent);color:#fff;padding:7px 10px;border-radius:8px;text-decoration:none;font-weight:600;font-size:.92rem}
 
+    .content{max-width:980px;margin:22px auto;padding:18px 16px}
+    .card{border:1px solid #eee;padding:16px;border-radius:10px;margin-bottom:14px}
+    .bar{width:100%;background:#f1f3f5;border-radius:8px;height:18px;overflow:hidden}
+    .fill{height:100%;background:linear-gradient(90deg,#ff3b30,#ff8a5b)}
+    .muted{color:var(--muted)}
+    footer{padding:16px;text-align:center;color:var(--muted);border-top:1px solid #eee;margin-top:30px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img class="logo" src="assets/logo.png" alt="StingriX logo" />
+      <div>
+        <div class="name">StingriX</div>
+        <div class="tag">Experimental kernel — single developer</div>
+      </div>
+    </div>
+    <nav>
+      <a class="button" href="index.html">Home</a>
+      <a class="button" href="mascot.html">Mascot</a>
+      <a class="button" href="developer.html">Developer</a>
+      <a class="button" href="developmentprogress.html">Development Progress</a>
+      <a class="button" href="downloads.html">Downloads</a>
+    </nav>
+  </header>
 
-<div class="card">
-<h3>Major release readiness (post-beta)</h3>
-<div class="bar">
-<div id="majorFill" class="fill"></div>
-</div>
-<p><strong id="majorPct">0%</strong> — Progress toward the first major public release (after the beta).</p>
-<div class="controls">
-<input id="majorInput" type="number" min="0" max="100" value="0" />
-<button id="majorSave">Save</button>
-<small class="muted">Last updated: <span id="majorTime">never</span></small>
-</div>
-</div>
+  <main class="content">
+    <h1>Development progress</h1>
+    <p class="muted">This page shows manual progress toward the next milestones. Values are updated by the developer by editing this file.</p>
 
+    <!-- BETA READINESS -->
+    <div class="card">
+      <h3>Beta readiness (first public beta)</h3>
+      <div class="bar" aria-hidden="true">
+        <!-- Cambia el width y el número para actualizar -->
+        <div class="fill" style="width: 0%;"></div>
+      </div>
+      <p><strong>0%</strong> — How close we are to releasing the first minimal public beta.</p>
+      <p class="muted">Last updated: August 2025</p>
+    </div>
 
-<div class="card">
-<h3>Notes</h3>
-<p>This page is a manual progress board. The beta is intentionally minimal. After a beta is released the progress bar meaning will switch to measure readiness for the next bigger milestone. Percentages are updated by the developer; values shown here are for public visibility and transparency.</p>
-</div>
+    <!-- MAJOR RELEASE READINESS -->
+    <div class="card">
+      <h3>Major release readiness (post-beta)</h3>
+      <div class="bar" aria-hidden="true">
+        <!-- Cambia el width y el número para actualizar -->
+        <div class="fill" style="width: 0%;"></div>
+      </div>
+      <p><strong>0%</strong> — Progress toward the first major public release after the beta.</p>
+      <p class="muted">Last updated: August 2025</p>
+    </div>
 
+    <div class="card">
+      <h3>Notes</h3>
+      <ul>
+        <li>The beta is intentionally minimal and experimental.</li>
+        <li>After the beta is released, the second bar will track the next major milestone.</li>
+        <li>Progress is iterative and paced by a single developer.</li>
+      </ul>
+    </div>
+  </main>
 
-<script>
-// Simple localStorage-based progress tracker so you can update without editing the file.
-function setProgress(key, pctEl, fillEl, inputEl, timeEl) {
-const raw = localStorage.getItem(key);
-const val = raw ? Number(raw) : 0;
-pctEl.textContent = val + '%';
-fillEl.style.width = val + '%';
-inputEl.value = val;
-const t = localStorage.getItem(key + ':time');
-timeEl.textContent = t ? new Date(Number(t)).toLocaleString() : 'never';
-}
-
-
-function saveProgress(key, inputEl) {
-let val = Number(inputEl.value) || 0;
-if (val < 0) val = 0; if (val > 100) val = 100;
-localStorage.setItem(key, String(val));
-localStorage.setItem(key + ':time', String(Date.now()));
-location.reload();
-}
-
-
-document.addEventListener('DOMContentLoaded', ()=>{
-const betaFill = document.getElementById('betaFill');
-const betaPct = document.getElementById('betaPct');
-const betaInput = document.getElementById('betaInput');
-const betaSave = document.getElementById('betaSave');
-const betaTime = document.getElementById('betaTime');
-
-
-const majorFill = document.getElementById('majorFill');
-const majorPct = document.getElementById('majorPct');
-const majorInput = document.getElementById('majorInput');
-const majorSave = document.getElementById('majorSave');
-const majorTime = document.getElementById('majorTime');
-
-
-setProgress('stingrix:beta', betaPct, betaFill, betaInput, betaTime);
-setProgress('stingrix:major', majorPct, majorFill, majorInput, majorTime);
-
-
-betaSave.addEventListener('click', ()=> saveProgress('stingrix:beta', betaInput));
-majorSave.addEventListener('click', ()=> saveProgress('stingrix:major', majorInput));
-});
-</script>
-</main>
-
-
-<footer>© 2025 StingriX — experimental kernel by a single developer</footer>
+  <footer>© 2025 StingriX — experimental kernel by a single developer</footer>
 </body>
 </html>
