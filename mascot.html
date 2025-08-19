@@ -1,117 +1,59 @@
+<!-- File: mascot.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>StingriX Mascot</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #ffffff;
-      color: #000000;
-    }
-
-    header {
-      background-color: #f5f5f5;
-      padding: 10px 20px;
-      display: flex;
-      align-items: center;
-      border-bottom: 2px solid #ddd;
-    }
-
-
-    nav {
-      display: flex;
-      gap: 10px;
-      margin-right: 20px; 
-    }
-
-    .nav-button {
-      padding: 6px 12px;
-      text-decoration: none;
-      font-weight: bold;
-      color: #333;
-      border: 1px solid #333;
-      border-radius: 5px;
-      background: #fff;
-      transition: background 0.15s, color 0.15s;
-    }
-
-    .nav-button:hover {
-      background-color: #e6e6e6;
-    }
-
-    header img {
-      height: 50px;
-      margin-right: 15px;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-      color: #333;
-    }
-
-    .section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: 30px auto;
-      background-color: #fafafa;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-    }
-
-    .section h2 {
-      color: #333;
-      border-bottom: 2px solid #333;
-      padding-bottom: 5px;
-    }
-
-    img.mascot {
-      display: block;
-      max-width: 300px;
-      margin: 20px auto;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #f5f5f5;
-      font-size: 0.9rem;
-      color: #555;
-      margin-top: 40px;
-      border-top: 2px solid #ddd;
-    }
-  </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>RaiX — Mascot of StingriX</title>
+<style>
+body{margin:0;font-family:Inter,Segoe UI,Arial;background:#fff;color:#111}
+header{display:flex;align-items:center;padding:12px 18px;border-bottom:1px solid #eee}
+header img.logo{height:44px}
+nav{margin-left:auto;display:flex;gap:8px}
+.content{max-width:900px;margin:28px auto;padding:20px}
+.hero{display:flex;gap:20px;align-items:center}
+.mascot-img{width:220px;height:220px;background:#fdecec;border-radius:14px;display:flex;align-items:center;justify-content:center;font-weight:700;color:#d02b2b}
+footer{padding:18px;text-align:center;color:#888;border-top:1px solid #eee}
+</style>
 </head>
 <body>
-  <header>
+<header>
+<div style="display:flex;gap:12px;align-items:center">
+<img class="logo" src="assets/logo.png" alt="StingriX logo"/>
+<div style="font-weight:700;color:#ff3b30">StingriX</div>
+</div>
+<nav>
+<a class="button" href="index.html">Home</a>
+<a class="button" href="mascot.html">Mascot</a>
+<a class="button" href="developer.html">Developer</a>
+<a class="button" href="developmentprogress.html">Development Progress</a>
+<a class="button" href="downloads.html">Downloads</a>
+</nav>
+</header>
 
-    <nav>
-      <a href="index.html" class="nav-button">Home</a>
-      <a href="mascot.html" class="nav-button">Mascot</a>
-      <a href="developer.html" class="nav-button">Developer</a>
-      <a href="downloads.html" class="nav-button">Downloads</a>
-    </nav>
 
-    <img src="assets/logo.png" alt="StingriX Logo" />
-    <h1>StingriX Kernel</h1>
-  </header>
+<main class="content">
+<div class="hero">
+<div class="mascot-img">RaiX</div>
+<div>
+<h1>RaiX — the mascot</h1>
+<p>RaiX is a female mascot: a red ray-like creature with a double tail. One tail is the classic pointy demon tail (a simple pointed tail), and the other is a venom-style tail with a stripe — a strong visual element rather than a literal mechanic. The red fork you may have noticed in some drawings is a humorous element: RaiX "found a red fork" because she couldn't find a trident — it's a playful touch, not a weapon spec.</p>
+<p>RaiX is meant to bring personality and a recognizable identity to the kernel. She represents curiosity, experimentation and a little mischief.</p>
+</div>
+</div>
 
-  <section class="section" id="mascot">
-    <h2>🦂 Meet the Mascot: RaiX (she/her)</h2>
 
-    <p><strong>RaiX</strong> is a red stingray with two distinct tails and small horns. One tail is the classic venomous stingray tail — it’s a natural, anatomical feature and carries no extra symbolic meaning. The other tail is a simple pointed red demon tail that gives her a mischievous, devilish look.</p>
+<section style="margin-top:18px">
+<h2>Design notes</h2>
+<ul>
+<li>Color scheme: red accents and dark backgrounds for contrast.</li>
+<li>Keep mascot illustrations friendly but slightly mischievous.</li>
+<li>RaiX is not a logo for any other project — she belongs to StingriX.</li>
+</ul>
+</section>
+</main>
 
-    <p>The little <strong>red fork</strong> she carries is intentionally humorous: as if she couldn't find a proper trident, she grabbed a red fork instead. This fork represents resourcefulness, a playful DIY spirit, and a wink of self-aware humor — she’s not about grand symbolism, she’s about personality and improvisation. The fork adds charm and makes RaiX feel approachable and quirky rather than intimidating.</p>
 
-    <p>Together, these elements show RaiX as both natural and playful: a stingray with real-world anatomy (the venomous tail), plus stylized, rebellious accents (demon tail, horns, and the red fork) that reflect StingriX’s experimental, curious, and slightly irreverent character.</p>
-
-  </section>
-
-  <footer>
-    &copy; 2025 StingriX Kernel. Created with passion by an indie developer.
-  </footer>
+<footer>© 2025 StingriX</footer>
 </body>
 </html>
