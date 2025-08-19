@@ -1,69 +1,85 @@
-<!-- File: index.html -->
-<div class="brand">
-<img class="logo" src="assets/logo.png" alt="StingriX logo" />
-<div>
-<div style="font-weight:700;color:var(--accent)">StingriX</div>
-<div style="font-size:0.85rem;color:var(--muted)">Experimental kernel — single developer</div>
-</div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>StingriX</title>
+  <style>
+    :root{--accent:#ff3b30;--muted:#6b7280}
+    body{margin:0;font-family:Inter,Segoe UI,system-ui,Arial,Helvetica,sans-serif;background:#fff;color:#111}
+    header{display:flex;align-items:center;gap:12px;padding:10px 16px;border-bottom:1px solid #eee}
+    header img.logo{height:32px;width:32px;object-fit:contain}
+    .brand{display:flex;align-items:center;gap:10px}
+    .brand .name{font-weight:700;color:var(--accent)}
+    .brand .tag{font-size:.82rem;color:var(--muted)}
+    nav{margin-left:auto;display:flex;gap:8px}
+    a.button{background:var(--accent);color:#fff;padding:7px 10px;border-radius:8px;text-decoration:none;font-weight:600;font-size:.92rem}
+    .hero{max-width:980px;margin:22px auto 0;padding:18px 16px;text-align:center}
+    .hero img.biglogo{height:96px;margin-bottom:10px}
+    h1{margin:4px 0 10px;font-size:1.9rem}
+    .muted{color:var(--muted)}
+    .warning{max-width:900px;margin:14px auto;padding:14px 16px;border-radius:8px;background:#ffece8;color:#7a0500;font-weight:600}
+    .section{max-width:900px;margin:16px auto;padding:18px 16px}
+    ul{line-height:1.6}
+    footer{padding:16px;text-align:center;color:var(--muted);border-top:1px solid #eee;margin-top:30px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img class="logo" src="assets/logo.png" alt="StingriX logo" />
+      <div>
+        <div class="name">StingriX</div>
+        <div class="tag">Experimental kernel — single developer</div>
+      </div>
+    </div>
+    <nav>
+      <a class="button" href="index.html">Home</a>
+      <a class="button" href="mascot.html">Mascot</a>
+      <a class="button" href="developer.html">Developer</a>
+      <a class="button" href="developmentprogress.html">Development Progress</a>
+      <a class="button" href="downloads.html">Downloads</a>
+    </nav>
+  </header>
 
+  <main>
+    <section class="hero">
+      <img class="biglogo" src="assets/logo.png" alt="StingriX large logo"/>
+      <h1>StingriX — an experimental kernel</h1>
+      <p class="muted">A personal kernel project built and maintained by a single teenage developer. This site documents goals, progress, and how to follow along.</p>
+    </section>
 
-<nav>
-<a class="button" href="index.html">Home</a>
-<a class="button" href="mascot.html">Mascot</a>
-<a class="button" href="developer.html">Developer</a>
-<a class="button" href="developmentprogress.html">Development Progress</a>
-<a class="button" href="downloads.html">Downloads</a>
-</nav>
-</header>
+    <div class="warning">
+      ⚠️ WARNING: StingriX is an experimental kernel made by a <strong>single teenage developer</strong>. There is <strong>no</strong> stable public release yet. Use only in safe testing environments.
+    </div>
 
+    <section class="section">
+      <h2>What is StingriX?</h2>
+      <p>StingriX is a small, learning-first kernel built from scratch. It is <em>not</em> Linux-based; it explores kernel design and the boot process for minimal systems. The initial public release will be an extremely minimal beta for testing core functionality.</p>
 
-<main>
-<section class="hero">
-<img class="biglogo" src="assets/logo.png" alt="StingriX large logo"/>
-<h1>StingriX — an experimental kernel</h1>
-<p class="muted">A personal kernel project built and maintained by a single teenage developer. This website documents the project's goals, progress and how to follow along.</p>
-</section>
+      <h3>Initial goals</h3>
+      <ul>
+        <li>Boot a tiny, auditable kernel that demonstrates core concepts.</li>
+        <li>Serve as a learning platform for low-level development.</li>
+        <li>Grow gradually — features and hardware support will be added over time.</li>
+      </ul>
 
+      <h3>Expectations</h3>
+      <ul>
+        <li>The first public beta will be minimal and mostly for testing.</li>
+        <li>Progress is iterative and paced by a single developer.</li>
+        <li>Feedback and constructive testing help the project improve.</li>
+      </ul>
+    </section>
 
-<div class="warning">
-⚠️ WARNING: StingriX is an experimental kernel made by a <strong>single teenage developer</strong>. There is <strong>no</strong> stable public release yet. Installing pre-release software can cause data loss, hardware issues or other problems. Use only in safe testing environments.
-</div>
+    <section class="section">
+      <h2>Follow the project</h2>
+      <p>See the <a href="developmentprogress.html">Development Progress</a> page for milestone percentages and plans.</p>
+    </section>
+  </main>
 
-
-<section class="section">
-<h2>What is StingriX?</h2>
-<p>StingriX is a small, learning-first kernel built from scratch. It is not Linux-based: it is intended to explore kernel design, low-level programming and the steps required to boot and run minimal systems. The initial public release will be an extremely minimal beta for testing core functionality.</p>
-
-
-<h3>Initial goals</h3>
-<ul>
-<li>Provide a tiny, auditable kernel that boots and demonstrates core concepts.</li>
-<li>Serve as a learning platform for low-level development.</li>
-<li>Grow gradually — features and hardware support will be added over time.</li>
-</ul>
-
-
-<h3>Expectations</h3>
-<ul>
-<li>The first public beta will be minimal and mostly for testing.</li>
-<li>Because this is a one-person project, progress will be iterative and paced by the developer.</li>
-<li>Contributions, feedback and constructive testing help the project improve.</li>
-</ul>
-
-
-</section>
-
-
-<section class="section">
-<h2>Follow the project</h2>
-<p>Official website link and updates are available in the project pages. See the <a href="developmentprogress.html">Development Progress</a> page for live progress percentages and plans.</p>
-</section>
-</main>
-
-
-<footer>
-© 2025 StingriX. Built and maintained by a single teenage developer.
-</footer>
+  <footer>
+    © 2025 StingriX. Built and maintained by a single teenage developer.
+  </footer>
 </body>
 </html>
