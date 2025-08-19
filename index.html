@@ -1,155 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>StingriX Kernel</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #ffffff;
-      color: #000000;
-    }
-
-    header {
-      background-color: #f5f5f5;
-      padding: 10px 20px;
-      display: flex;
-      align-items: center;
-      border-bottom: 2px solid #ddd;
-    }
-
-    nav {
-      display: flex;
-      gap: 10px;
-      margin-right: 20px; 
-    }
-
-    .nav-button {
-      padding: 6px 12px;
-      text-decoration: none;
-      font-weight: bold;
-      color: #333;
-      border: 1px solid #333;
-      border-radius: 5px;
-      background: #fff;
-      transition: background 0.15s, color 0.15s;
-    }
-
-    .nav-button:hover {
-      background-color: #e6e6e6;
-    }
-
-    header img {
-      height: 50px;
-      margin-right: 15px;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-      color: #333;
-    }
-
-    .logo-large {
-      display: block;
-      margin: 40px auto 20px auto;
-      max-width: 250px;
-    }
-
-    .section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: 30px auto;
-      background-color: #fafafa;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-    }
-
-    .section h2 {
-      color: #333;
-      border-bottom: 2px solid #333;
-      padding-bottom: 5px;
-    }
-
-    .warning {
-      background-color: #cc0000;
-      color: white;
-      padding: 20px;
-      border-radius: 8px;
-      font-weight: bold;
-      text-align: center;
-      margin-bottom: 25px;
-      text-transform: uppercase;
-      line-height: 1.4;
-    }
-
-    ul {
-      margin: 15px 0;
-      padding-left: 20px;
-    }
-
-    a.button {
-      display: inline-block;
-      margin: 10px 10px 0 0;
-      padding: 10px 20px;
-      background: #333;
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #f5f5f5;
-      font-size: 0.9rem;
-      color: #555;
-      margin-top: 40px;
-      border-top: 2px solid #ddd;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    
-    <nav>
-      <a href="index.html" class="nav-button">Home</a>
-      <a href="mascot.html" class="nav-button">Mascot</a>
-      <a href="developer.html" class="nav-button">Developer</a>
-      <a href="downloads.html" class="nav-button">Downloads</a>
-    </nav>
-
-    <img src="assets/logo.png" alt="StingriX Logo" />
-    <h1>StingriX Kernel</h1>
-  </header>
+<!-- File: index.html -->
+<div class="brand">
+<img class="logo" src="assets/logo.png" alt="StingriX logo" />
+<div>
+<div style="font-weight:700;color:var(--accent)">StingriX</div>
+<div style="font-size:0.85rem;color:var(--muted)">Experimental kernel — single developer</div>
+</div>
+</div>
 
 
-  <img src="assets/logo.png" alt="StingriX Logo Large" class="logo-large"/>
+<nav>
+<a class="button" href="index.html">Home</a>
+<a class="button" href="mascot.html">Mascot</a>
+<a class="button" href="developer.html">Developer</a>
+<a class="button" href="developmentprogress.html">Development Progress</a>
+<a class="button" href="downloads.html">Downloads</a>
+</nav>
+</header>
 
-  <section class="section" id="intro">
-    <div class="warning">
-      ⚠️ WARNING: StingriX is an experimental kernel created and maintained by a <strong>teenage indie developer</strong>.  
-      This is <strong>not</strong> a product of a company or large group.  
-      Expect bugs, incomplete features, and unstable behavior.  
-      By using StingriX, you acknowledge that it is highly experimental and may cause system issues.  
-      Use at your own risk and share feedback to help improve the project.
-    </div>
-    <h2>🔧 Introduction</h2>
-    <p><strong>StingriX</strong> is a minimal, independent kernel project designed to be simple, lightweight, and educational. Its purpose is not to compete with production-grade kernels but to provide:</p>
-    <ul>
-      <li>🛠 A minimal foundation with only the essentials</li>
-      <li>🧑‍💻 An educational environment for those curious about kernel development</li>
-      <li>🔧 A lightweight base for experiments in operating system design</li>
-      <li>🎯 A personal project that may evolve with community input</li>
-    </ul>
-    <p>This project is entirely built by one young developer, motivated by curiosity and the desire to learn. StingriX is currently in its very early stages, more of a proof of concept than a complete operating system kernel.</p>
-  </section>
 
-  <footer>
-    &copy; 2025 StingriX Kernel. Created with passion by an indie developer.
-  </footer>
+<main>
+<section class="hero">
+<img class="biglogo" src="assets/logo.png" alt="StingriX large logo"/>
+<h1>StingriX — an experimental kernel</h1>
+<p class="muted">A personal kernel project built and maintained by a single teenage developer. This website documents the project's goals, progress and how to follow along.</p>
+</section>
+
+
+<div class="warning">
+⚠️ WARNING: StingriX is an experimental kernel made by a <strong>single teenage developer</strong>. There is <strong>no</strong> stable public release yet. Installing pre-release software can cause data loss, hardware issues or other problems. Use only in safe testing environments.
+</div>
+
+
+<section class="section">
+<h2>What is StingriX?</h2>
+<p>StingriX is a small, learning-first kernel built from scratch. It is not Linux-based: it is intended to explore kernel design, low-level programming and the steps required to boot and run minimal systems. The initial public release will be an extremely minimal beta for testing core functionality.</p>
+
+
+<h3>Initial goals</h3>
+<ul>
+<li>Provide a tiny, auditable kernel that boots and demonstrates core concepts.</li>
+<li>Serve as a learning platform for low-level development.</li>
+<li>Grow gradually — features and hardware support will be added over time.</li>
+</ul>
+
+
+<h3>Expectations</h3>
+<ul>
+<li>The first public beta will be minimal and mostly for testing.</li>
+<li>Because this is a one-person project, progress will be iterative and paced by the developer.</li>
+<li>Contributions, feedback and constructive testing help the project improve.</li>
+</ul>
+
+
+</section>
+
+
+<section class="section">
+<h2>Follow the project</h2>
+<p>Official website link and updates are available in the project pages. See the <a href="developmentprogress.html">Development Progress</a> page for live progress percentages and plans.</p>
+</section>
+</main>
+
+
+<footer>
+© 2025 StingriX. Built and maintained by a single teenage developer.
+</footer>
 </body>
 </html>
